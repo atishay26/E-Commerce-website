@@ -1,0 +1,62 @@
+<html>
+<BODY bgcolor="aliceblue">
+	<style>
+
+	*{
+		margin:0px;
+		padding:10px;
+	}
+	#container ul
+	{
+		margin:0px;
+		padding:0px;
+		list-style:none;
+	}
+	#container ul ul
+	{
+		display:none;
+	}
+	#container ul li
+	{
+		float:left;
+		text-align:center;
+		line-height:30px;
+		opacity: .8;
+		background-color:grey;
+		width:285px;
+		height:30px;
+		border:1px solid white;
+		text-align:center;
+		float:left;
+		font-size:20;
+		color:white;
+		text-radius:8px;
+		border-radius:8px;
+		position: relative;
+	}
+	#container ul li:hover>ul
+	{
+		display:block;
+	}
+
+	#container ul li:hover
+	{
+		background-color:yellow;
+		color:blue;
+	}
+	</style>
+	<font color='blue' size='4'><a href='index.html' style='text-decoration:none'><b>back</a></font>
+
+
+	<h2 text align="center" ><font size="5" color="red">Forgot Password</font></h2>
+
+	<form align="center" method="post" action="forgot">
+		<p align="center"><font size="5">Enter the E-mail address here to recieve the password:</p>
+		<br>
+		Email:&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input type="email"  name="userId" placeholder=" Enter E-mail address" required><br><br>
+
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" value="Send Mail">
+	</form>
+</body>
+</html>

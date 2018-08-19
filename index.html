@@ -1,0 +1,100 @@
+<html>
+<HEAD>
+	<script type="text/javascript">
+		window.history.forward();
+		function noBack()                    
+		{
+			window.history.forward();
+		}
+		function myfunction()
+		{
+			var form=document.form1;
+			var name=form.userId.value;
+			var pass=form.pass.value;
+
+			if (navigator.cookieEnabled==false)
+			{
+				document.write("<h1>X--Enable Cookies first--X</h1>");
+				document.close();
+			}
+		}
+	</script>
+</HEAD>
+	 
+<BODY bgcolor="aliceblue"onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
+	<style>
+	
+	*{
+		margin:0px;
+		padding:10px;
+	}
+	#container ul
+	{
+		margin:0px;
+		padding:0px;
+		list-style:none;
+	}
+	#container ul ul
+	{
+		display:none;
+	}
+	#container ul li
+	{
+		float:left;
+		text-align:center;
+		line-height:30px;
+		opacity: .8;
+		background-color:grey;
+		width:285px;
+		height:30px;
+		border:1px solid white;
+		text-align:center;
+		float:left;
+		font-size:20;
+		color:white;
+		text-radius:8px;
+		border-radius:8px;
+		position: relative;
+	}
+	#container ul li:hover>ul
+	{
+		display:block;
+	}
+
+	#container ul li:hover
+	{
+		background-color:yellow;
+		color:blue;
+	}
+	</style>
+	<div id="container">
+		<ul>
+		<li><a href="home.html" style="text-decoration:none">Home</a></li>
+		<li>Login</li>
+		<li><a href="register.html" style="text-decoration:none">Registration</a></li>
+		<li><a href="about.html" style="text-decoration:none">About us</a></li>
+		</ul>
+	</div>
+	<br><br><br><br>
+	<h1 text align="center"><font size="5">Already have an account</h1>
+	
+	<form align="center" name="form1" method="post" action="login">
+		Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input type="email"  name="userId" placeholder=" Enter E-mail address" required><br><br>
+		
+		Password:&nbsp&nbsp
+		<input type="password"  name="pass" placeholder=" Enter Password" required><br><br><br>
+	
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input type="submit" value="Sign in" onClick="myfunction()">
+	
+	<a href="forgot.html" style="text-decoration:none">Forget Password?</a>
+
+	<br><br><br>
+	<h1 text align="center"><font size="5"><a href="register.html" style="text-decoration:none">Create an account</a></h1>
+	</form>
+	</body>
+</html>
+
+
+

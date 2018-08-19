@@ -1,0 +1,11 @@
+create table cust(userId varchar2(40),pass varchar2(20),custid varchar2(100),name varchar2(20),phone_no varchar2(20))
+/
+create table bank(cardno varchar2(20),name varchar2(20))
+/
+create table feedback(email varchar2(40),msg varchar2(4000),fdate date)
+/
+create table customer_id(custid number)
+/
+insert into customer_id values(25)
+/
+stop
